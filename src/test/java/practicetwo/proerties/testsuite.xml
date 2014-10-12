@@ -1,0 +1,9 @@
+<suite name="FireflyAutomation" >
+	 <parameter name="TestData" value="//src//test//resources//loginCredentials.txt" />	 
+	 <test name="Practice1" preserve-order="true" >
+		<classes>			
+			<class name="practicetwo.proerties.Login126" />	        
+		    
+		</classes>
+	</test> 	
+</suite> 

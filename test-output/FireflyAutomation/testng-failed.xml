@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FireflyAutomation]">
+  <parameter name="TestData" value="//src//test//resources//loginCredentials.txt"/>
+  <test name="Practice1(failed)">
+    <classes>
+      <class name="practicetwo.proerties.Login126">
+        <methods>
+          <include name="accessMailBoxWithCSV"/>
+          <include name="inital"/>
+          <include name="finalizeBrowser"/>
+        </methods>
+      </class> <!-- practicetwo.proerties.Login126 -->
+    </classes>
+  </test> <!-- Practice1(failed) -->
+</suite> <!-- Failed suite [FireflyAutomation] -->
