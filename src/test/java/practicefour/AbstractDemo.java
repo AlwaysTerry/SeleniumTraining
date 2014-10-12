@@ -9,6 +9,8 @@ public  abstract class AbstractDemo{
 	
 	public static void main(String[] args){
 		AbstractDemo.setAge1();
+		
+		
 
 	}
 }
