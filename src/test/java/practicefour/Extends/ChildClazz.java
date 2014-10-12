@@ -10,22 +10,26 @@ public class ChildClazz extends SupperClazz{
 	
 	
 	
-	public ChildClazz(String t) {
+	public ChildClazz(String t) {		
 		super(t);
 		System.out.println("This is childclass constructor");
+		
 		// TODO Auto-generated constructor stub
 	}
 
 	public void getAge(){
 		System.out.println("My age is 31");
 	}
+	public void getName(){
+		
+	}
 	
 	public static void main(String[] args){
 	    	SupperClazz sc = new ChildClazz("test");
-	    	sc.getAge();
+	    	/*sc.getAge();
 	    	
 	    	boolean tr = sc instanceof SupperClazz;
-	    	System.out.println(tr);
+	    	System.out.println(tr);*/
 	}
 	
 	

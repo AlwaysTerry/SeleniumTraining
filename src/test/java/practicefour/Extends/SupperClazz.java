@@ -2,6 +2,7 @@ package practicefour.Extends;
 
 public class SupperClazz {
 
+	
 	static String a = "supper-a";
 	
 	static{

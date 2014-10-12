@@ -1,6 +1,6 @@
 package practicefour;
 
-public class StaticDemo {
+public  class StaticDemo {
 
 	static String v1 = "m";
 	
@@ -27,14 +27,19 @@ public class StaticDemo {
 		///scenario1
 		StaticDemo a = new StaticDemo();
 		a.v1="n";
-		System.out.println(a.v1);
+		System.out.println("-----a----:"+a.v1);
 		
 		StaticDemo b = new StaticDemo();		
-		System.out.println(b.v1);
+		System.out.println("-----b----:"+b.v1);
 		
 		
 		///scenario2
 		InnerClazz in = new StaticDemo.InnerClazz();
+		
+		
+		////scenario3
+		StaticDemo.getStaticMethod();
+		
 		
 	}
 	
