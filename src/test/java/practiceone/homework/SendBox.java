@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 
-public class SendBox extends TestSuite{
+public class SendBox extends Suite{
 	
 	
 	

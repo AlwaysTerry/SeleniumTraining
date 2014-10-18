@@ -9,7 +9,7 @@ import org.testng.annotations.BeforeSuite;
 import utils.Browsers;
 import utils.BrowsersType;
 
-public class TestSuite {
+public class Suite {
 	protected  static Browsers browser =  new Browsers(BrowsersType.chrome);
 	protected static WebDriver driver = browser.driver;
 	

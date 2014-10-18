@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 
 
-public class Inbox extends TestSuite{
+public class Inbox extends Suite{
 
 	
 	@BeforeClass
