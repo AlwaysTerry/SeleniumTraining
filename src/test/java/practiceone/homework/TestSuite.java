@@ -10,7 +10,7 @@ import utils.Browsers;
 import utils.BrowsersType;
 
 public class TestSuite {
-	protected  static Browsers browser =  new Browsers(BrowsersType.firefox);
+	protected  static Browsers browser =  new Browsers(BrowsersType.chrome);
 	protected static WebDriver driver = browser.driver;
 	
 	@BeforeSuite
