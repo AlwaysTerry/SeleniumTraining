@@ -27,7 +27,14 @@ public class Wait {
 		
 	}
 	
-	
+	public void waitForElementPresent(WebElement locator){
+		try{
+			(new WebDriverWait(driver, timeout)).until(ExpectedConditions.visibilityOf(locator));
+		}catch(Exception e){
+			
+		}
+		
+	}
 
 	
 	

@@ -42,7 +42,7 @@ public class TestInbox {
 	}
 	
 	
-	@Test
+	//@Test
 	public void checkMailBox(){
 		driver.findElement(By.xpath("//span[text()='ÊÕ¼şÏä']")).click();
 	}

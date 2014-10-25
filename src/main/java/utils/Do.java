@@ -23,8 +23,17 @@ public class Do {
 		return driver.findElement(By.xpath(locator.getValue(locatorname)));
 	}
 	
+	public  WebElement whatXpath(String locatorname){
+		return driver.findElement(By.xpath(locatorname));
+	}
+	
 	public List<WebElement> whats(String locatorname){
 		return driver.findElements(By.xpath(locator.getValue(locatorname)));
+	}
+	
+	
+	public List<WebElement> whatsXpath(String locatorname){
+		return driver.findElements(By.xpath(locatorname));
 	}
 	
 	public void waitForElementPresent(String locatorname){
