@@ -22,9 +22,17 @@
   		<artifactId>testng</artifactId>
   		<version>6.8.5</version>
   	</dependency>
+   
+   <dependency>
+  		<groupId>training</groupId>
+  		<artifactId>training</artifactId>
+  		<version>1</version>
+  		<scope>system</scope>
+  		<systemPath>${project.basedir}/tool/training.jar</systemPath>
+  	</dependency>
   </dependencies>
   
-  
+
   
   <build>
   <defaultGoal>complie</defaultGoal>
@@ -33,6 +41,20 @@
             <artifactId>maven-surefire-plugin</artifactId>
             <version>2.10</version>
             <configuration>
+<!--             <forkMode>never</forkMode> -->
+<!--             <parallel>classes</parallel> -->
+<!--             <threadCount>2</threadCount> -->
+            
+           <excludes>
+                 <exclude>practicefive/TestInbox.java</exclude>
+<!--                  <exclude>practicesix/TestVist2.java</exclude> -->
+                 <exclude>practicesix/TestRegister.java</exclude>
+               </excludes>
+<!--              <sureXmlFiles>  -->
+<!--                     <sureXmlFile>                          -->
+<!--                         src/test/java/practicesix/testng-customsuite.xml -->
+<!--                     </sureXmlFile>  -->
+<!--                 </sureXmlFiles> -->
             </configuration>
             
          </plugin>

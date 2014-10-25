@@ -8,6 +8,7 @@ import junit.framework.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -31,7 +32,7 @@ public class TestRegister {
 	RegisterPage regpage;
 	LoginPage loginpage;
 	
-	@BeforeSuite
+	@BeforeClass
 	public void initalizeSuite(){	
 		homepage = new HomePage(driver);
 		regpage = new RegisterPage(driver);
@@ -58,17 +59,23 @@ public class TestRegister {
 	
 	
 	@Test
-	public void login(){		
+	public void login(){
+		String username = "testRD2015";
+		String password = "admin123";
+		
 		wa.waitForElementPresent(homepage.login);
+		
 		homepage.login.click();
-		loginpage.loginname.sendKeys("testRD2015");
-		loginpage.password.sendKeys("admin123",Keys.ENTER);
+		
+		loginpage.loginname.sendKeys(username);
+		loginpage.password.sendKeys(password,Keys.ENTER);
+		
 		wa.waitFor(3000);
-		Assert.assertEquals(homepage.getWebElement(homepage.username, "testRD2015").isDisplayed(), true);
+		Assert.assertEquals(homepage.getWebElement(homepage.username, username).isDisplayed(), true);
 		
 	}
 	
-	@AfterSuite
+	@AfterClass
 	public void releaseSuite(){	
 		driver.quit();
 	}
