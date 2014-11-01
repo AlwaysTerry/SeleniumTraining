@@ -1,0 +1,17 @@
+<suite name="FireflyAutomation" >
+	 <parameter name="TestData" value="\tool\test.properties" />
+	 <parameter name="url" value="http://localhost/testlink/testlink-1.9.3/lib/api/xmlrpc.php" />
+	 <parameter name="devkey" value="1aa5b2449edaa0e2ab1a252612e107a8" />
+	 <parameter name="project" value="TestPro-8-30" />
+	 <parameter name="plan" value="TestPlan-8-30" />
+	 <parameter name="build" value="build-830" />
+	 <parameter name="platform" value="ie9" />
+	 
+	 <test name="Practice8" preserve-order="true" >
+		<classes>			
+			<class name="practiceeight.TestTestLink" />
+
+		    
+		</classes>
+	</test> 	
+</suite> 
